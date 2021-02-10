@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<body ng-app="">
+
+My favorite day is:
+<select ng-model="mydays">
+  <option value="1">sunday
+  <option value="2">monday
+  <option value="3">tuesday
+  <option value="4">wednesday
+  <option value="5">thursday
+  <option value="6">friday
+  <option value="7">saturday
+</select>
+
+<hr>
+<div ng-switch="mydays">
+  <div ng-switch-when="1">
+     <h1>sunday</h1>
+     <p>Welcome to sunday!!!!</p>
+  </div>
+  <div ng-switch-when="2">
+     <h1>monday</h1>
+     <p>Welcome to monday!!!!</p>
+  </div>
+  <div ng-switch-when="3">
+     <h1>tuesday</h1>
+     <p>Welcome to tuesday!!!!.</p>
+  </div>
+  <div ng-switch-when="4">
+     <h1>wednesday</h1>
+     <p>Welcome to wednesday!!!!.</p>
+  </div>
+  <div ng-switch-when="5">
+     <h1>thursday</h1>
+     <p>Welcome to thursday!!!!.</p>
+  </div>
+  <div ng-switch-when="6">
+     <h1>friday</h1>
+     <p>Welcome to friday!!!.</p>
+  </div>
+  <div ng-switch-when="7">
+     <h1>saturday</h1>
+     <p>Welcome to saturday!!!!.</p>
+  </div>
+  <div ng-switch-default>
+     <h1>Days..........</h1>
+     <p>Select any days from the dropdown...........</p>
+  </div>
+</div>
+<hr>
+
+<p>WELCOME HAVE A NICE DAY!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!</p>
+
+</body>
+</html>
